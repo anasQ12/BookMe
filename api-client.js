@@ -1,6 +1,5 @@
 // api-client.js — place in root alongside index.html
-const API_BASE = 'https://book-aqljozd5c-anas-q-s-projects.vercel.app/api';
-
+const API_BASE = 'https://book-me-ten.vercel.app/api';
 let _token = localStorage.getItem('ahc_token') || null;
 
 async function apiFetch(path, options = {}) {
