@@ -1390,6 +1390,14 @@ function resetBooking() {
 // ─── Admin ────────────────────────────────────────
 function checkAdmin() { showTab('admin'); }
 
+function adminLogout() {
+  state.adminLoggedIn = false;
+  document.getElementById('adminLogin').classList.remove('hidden');
+  document.getElementById('adminDash').classList.add('hidden');
+  document.getElementById('adminPassInput').value = '';
+  showTab('booking');
+}
+
 function adminLogin() {
   const pass = document.getElementById('adminPassInput').value;
   if (pass === 'admin123') {
